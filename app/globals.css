@@ -2,20 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+#hp-text {
+  text-shadow: 1px 1px 3px black;
 }
+#hp-text {
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+}
+#hp-btn {
+  opacity: 0;
+  animation: fadeIn 4s forwards;
+  animation-delay: 2s;
+}
+#hp-bigbtn {
+  opacity: 0;
+  animation: fadeIn 5s forwards;
+  animation-delay: 3s;
+}
+.fadein-first {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+.fadein-second {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  animation-delay: 1s;
+}
+.fadein-third {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  animation-delay: 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes slide-in {
+  from {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.animate-slide-in-name {
+  opacity: 0;
+  animation: slide-in 2s ease-out forwards;
+  animation-delay: 2s;
+}
+.animate-slide-in {
+  animation: slide-in 2s ease-out forwards;
+}
+@keyframes shine {
+  0% {
+    background-position: 100%;
+    transform: scale(1);
+  }
+  12.5% {
+    transform: scale(1.01);
+  }
+  25% {
+    background-position: 0%;
+    transform: scale(1);
+  }
+  100% {
+    background-position: 0%;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
