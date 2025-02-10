@@ -26,7 +26,7 @@ export default function Portfolio() {
             OpenWeather API 取得天氣數據，並使用 useState 和 useEffect
             管理狀態與時間更新，提供流暢的使用體驗。
           </SideProject>
-          <SideProject image="./my-website.png" name="My Website">
+          <SideProject image="./my-website.png" name="My Website" link="https://chihuichien.github.io/myweb/">
             此網站由 Next.js 和 Tailwind CSS
             開發，展示我的個人資訊、專業技能與專案作品。透過 React Hooks 和
             Next.js Routing，網站具備良好的狀態管理和流暢的頁面切換體驗。此外，結合了
