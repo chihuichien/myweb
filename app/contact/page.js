@@ -10,7 +10,7 @@ export default function Contact() {
       </header>
       <div className="fixed inset-0 -z-10 brightness-50">
         <Image
-          src="/contact-bg.jpg"
+          src="./contact-bg.jpg"
           alt="background picture on contact page"
           fill
           className="object-cover"
@@ -24,7 +24,7 @@ export default function Contact() {
         </div>
         <div className="flex justify-center fadein-first relative">
           <Image
-            src="/profile_5.jpg"
+            src="./profile_5.jpg"
             alt="profile picture on contact page"
             width={350}
             height={350}
@@ -37,7 +37,7 @@ export default function Contact() {
           <div className="flex flex-col gap-1">
             <div className="flex items-center">
               <Image
-                src="/GitHub Logo.svg"
+                src="./GitHub Logo.svg"
                 alt="github small icon on contact page"
                 width={40}
                 height={40}
@@ -51,7 +51,7 @@ export default function Contact() {
             </div>
             <div className="flex items-center">
               <Image
-                src="/email.svg"
+                src="./email.svg"
                 alt="email icon on contact page"
                 width={40}
                 height={40}
@@ -67,7 +67,7 @@ export default function Contact() {
           <div className="mt-4">
             <button className="flex items-center bg-white px-5 py-2 rounded-lg hover:bg-zinc-200 hover:shadow-md ">
               <Image
-                src="/File Text.svg"
+                src="./File Text.svg"
                 alt="resume icon on the button"
                 width={40}
                 height={40}

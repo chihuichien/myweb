@@ -8,10 +8,10 @@ import { useState } from "react";
 
 export default function About() {
   const profiles = [
-    "/profile_1.JPG",
-    "/profile_2.jpg",
-    "/profile_3.jpg",
-    "/profile_4.JPG",
+    "./profile_1.JPG",
+    "./profile_2.jpg",
+    "./profile_3.jpg",
+    "./profile_4.JPG",
   ];
   const [imageNum, setImageNum] = useState(0);
 
@@ -77,7 +77,7 @@ export default function About() {
                     className="bg-gray-400/50 backdrop-blur-md hover:bg-stone-800/50 transition-colors duration-200 px-1 py-3 rounded-md"
                   >
                     <Image
-                      src="/left_img.svg"
+                      src="./left_img.svg"
                       alt="left small icon to change image"
                       width={45}
                       height={45}
@@ -98,7 +98,7 @@ export default function About() {
                     className="bg-gray-400/50 backdrop-blur-md hover:bg-stone-800/50 transition-colors duration-200 px-1 py-3 rounded-md"
                   >
                     <Image
-                      src="/right_img.svg"
+                      src="./right_img.svg"
                       alt="right small icon to change image"
                       width={45}
                       height={45}
@@ -159,7 +159,7 @@ export default function About() {
             </div>
             <div className="flex gap-12">
               <div className="bg-neutral-500 text-neutral-100 px-10 py-9 w-64 rounded-lg hover:scale-110 hover:shadow-xl duration-300 ease-in-out group fadein-first">
-                <Image src="/fe_icon.svg" alt="front-end icon on about me page" width={60} height={60} className="mx-auto mb-4" />
+                <Image src="./fe_icon.svg" alt="front-end icon on about me page" width={60} height={60} className="mx-auto mb-4" />
                 <p className="text-center text-2xl font-semibold mb-4 group-hover:underline underline-offset-4">FRONT-END</p>
                 <ul className="text-center text-lg text-gray-300 group-hover:text-gray-50">
                   <li>HTML</li>
@@ -173,7 +173,7 @@ export default function About() {
                 </ul>
               </div>
               <div className="bg-neutral-500 text-neutral-100 px-10 py-9 w-64 rounded-lg hover:scale-110 hover:shadow-xl duration-300 ease-in-out group fadein-second">
-                <Image src="/doc_icon.svg" alt="document icon on about me page" width={60} height={60} className="mx-auto mb-4" />
+                <Image src="./doc_icon.svg" alt="document icon on about me page" width={60} height={60} className="mx-auto mb-4" />
                 <p className="text-center text-2xl font-semibold mb-4 group-hover:underline underline-offset-4">OFFICE TOOLS </p>
                 <ul className="text-center text-lg text-gray-300 group-hover:text-gray-50">
                   <li>Word</li>
@@ -186,7 +186,7 @@ export default function About() {
                 </ul>
               </div>
               <div className="bg-neutral-500 text-neutral-100 px-10 py-9 w-64 rounded-lg hover:scale-110 hover:shadow-xl duration-300 ease-in-out group fadein-third">
-                <Image src="/language.svg" alt="language icon on about me page" width={60} height={60} className="mx-auto mb-4" />
+                <Image src="./language.svg" alt="language icon on about me page" width={60} height={60} className="mx-auto mb-4" />
                 <p className="text-center text-2xl font-semibold mb-4 group-hover:underline underline-offset-4">LANGUAGE</p>
                 <ul className="text-center text-lg text-gray-300 group-hover:text-gray-50">
                   <li>Chinese</li>

@@ -21,7 +21,7 @@ export default function Home() {
       </header>
       <div className="fixed inset-0 -z-10 brightness-50">
         <Image
-          src="/jonathan-bean-sbZU1j31ggE-unsplash.jpg"
+          src="./jonathan-bean-sbZU1j31ggE-unsplash.jpg"
           alt="background picture on home page"
           fill
           className="object-cover"
@@ -38,7 +38,7 @@ export default function Home() {
         <div id="hp-btn">
           <Button>
             <Image
-              src="/File Text.svg"
+              src="./File Text.svg"
               alt="resume icon on the button"
               width={25}
               height={25}
@@ -54,7 +54,7 @@ export default function Home() {
         >
           <p className="mr-5">Get to know me </p>
           <Image
-            src="/Arrow Right white.svg"
+            src="./Arrow Right white.svg"
             alt="arrow right icon on the button"
             width={40}
             height={40}
