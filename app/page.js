@@ -36,15 +36,17 @@ export default function Home() {
           <p className="text-base">Welcome To My world!</p>
         </div>
         <div id="hp-btn">
-          <Button>
-            <Image
-              src="./File Text.svg"
-              alt="resume icon on the button"
-              width={25}
-              height={25}
-            />
-            <p className="m-1">Resume</p>
-          </Button>
+          <a href="./resume.pdf" download>
+            <Button>
+              <Image
+                src="./File Text.svg"
+                alt="resume icon on the button"
+                width={25}
+                height={25}
+              />
+              <p className="m-1">Resume</p>
+            </Button>
+          </a>
         </div>
       </div>
       <div id="hp-bigbtn" className="flex justify-end mt-28">

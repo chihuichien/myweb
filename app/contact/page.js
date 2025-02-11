@@ -65,15 +65,17 @@ export default function Contact() {
             </div>
           </div>
           <div className="mt-4">
-            <button className="flex items-center bg-white px-5 py-2 rounded-lg hover:bg-zinc-200 hover:shadow-md ">
-              <Image
-                src="./File Text.svg"
-                alt="resume icon on the button"
-                width={40}
-                height={40}
-              />
-              <p className="m-1">Resume</p>
-            </button>
+            <a href="./resume.pdf" download>
+              <button className="flex items-center bg-white px-5 py-2 rounded-lg hover:bg-zinc-200 hover:shadow-md ">
+                <Image
+                  src="./File Text.svg"
+                  alt="resume icon on the button"
+                  width={40}
+                  height={40}
+                />
+                <p className="m-1">Resume</p>
+              </button>
+            </a>
           </div>
         </div>
       </div>
