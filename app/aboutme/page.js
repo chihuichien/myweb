@@ -52,7 +52,7 @@ export default function About() {
                 </p>
                 <div className="border-b-4 border-white absolute -bottom-[12px] -right-12 xs:-right-2 w-5/6"></div>
               </div>
-              <div className="mt-12 px-14 flex flex-col text-zinc-700 hidden sm:block">
+              <div className="mt-12 px-14 sm:flex flex-col text-zinc-700 hidden">
                 <p className="mb-5">
                   目前擔任軟體測試助理工程師，主要負責手動測試以及撰寫測試計畫，確保軟體功能的正確性與穩定性。在這段工作經歷中，我累積了對產品細節的高度敏感度，並培養了分析與解決問題的能力。
                 </p>
