@@ -29,7 +29,7 @@ export default function Portfolio() {
           <SideProject image="./my-website.png" name="My Website" link="https://chihuichien.github.io/myweb/">
             此網站由 Next.js 和 Tailwind CSS
             開發，展示我的個人資訊、專業技能與專案作品。透過 React Hooks 和
-            Next.js Routing，網站具備良好的狀態管理和流暢的頁面切換體驗。此外，結合了
+            Next.js Routing，網站具備良好的狀態管理和流暢的頁面切換。此外，結合了
             Next.js 的 Image
             元件，提升圖片加載效能，確保頁面渲染速度快且視覺效果佳。
           </SideProject>
