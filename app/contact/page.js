@@ -18,7 +18,7 @@ export default function Contact() {
       </div>
       <div className="pt-32 pb-28">
         <div className="text-center mb-7">
-          <span className="text-6xl bg-gradient-to-tl from-blue-200 to-gray-200 bg-clip-text text-transparent font-bold font-serif hover:from-sky-200 hover:to-blue-300 hover:bg-gradient-to-br hover:scale-105 inline-block">
+          <span className="text-5xl sm:text-6xl bg-gradient-to-tl from-blue-200 to-gray-200 bg-clip-text text-transparent font-bold font-serif hover:from-sky-200 hover:to-blue-300 hover:bg-gradient-to-br hover:scale-105 inline-block">
             Contact Me !
           </span>
         </div>
@@ -30,7 +30,7 @@ export default function Contact() {
             height={350}
             className="transform transition-transform hover:scale-105 hover:shadow-2xl duration-300 ease-in-out rounded-xl border peer"
           />
-          <div className="border-4 border-white absolute w-[350px] h-[350px] -z-10 peer-hover:top-10 peer-hover:right-[510px] top-0 right-[545px] duration-500 ease-in-out rounded-xl"></div>
+          <div className="border-4 border-white absolute w-[350px] h-[350px] -z-10 peer-hover:translate-x-8 peer-hover:translate-y-8 top-0 duration-500 ease-in-out rounded-xl"></div>
         </div>
 
         <div className="flex flex-col items-center mt-12">

@@ -38,21 +38,21 @@ export default function About() {
       <header>
         <Header />
       </header>
-      <div className="pt-32 pb-24 px-16">
+      <div className="pt-32 pb-24 px-16 xs:px-6">
         <div>
           <div className="flex">
             <div className="w-1/2 flex flex-col items-center pr-16">
               <div className="relative">
-                <p className="text-3xl animate-slide-in shadow-text font-mono">
+                <p className="sm:text-3xl sm:pl-0 text-2xl pl-12 animate-slide-in shadow-text font-mono">
                   Hi ! I&apos;m{" "}
                 </p>
                 <div className="border-t-4 border-white absolute top-[60px] left-2 w-5/6"></div>
-                <p className="text-6xl font-semibold animate-slide-in-name ml-16 mt-8 italic text-sky-800">
+                <p className="text-6xl font-semibold animate-slide-in-name ml-16 mt-8 xs:ml-10 italic text-sky-800">
                   CHI-HUI, CHIEN
                 </p>
-                <div className="border-b-4 border-white absolute -bottom-[12px] -right-12 w-5/6"></div>
+                <div className="border-b-4 border-white absolute -bottom-[12px] -right-12 xs:-right-2 w-5/6"></div>
               </div>
-              <div className="mt-12 px-14 flex flex-col text-zinc-700">
+              <div className="mt-12 px-14 flex flex-col text-zinc-700 hidden sm:block">
                 <p className="mb-5">
                   目前擔任軟體測試助理工程師，主要負責手動測試以及撰寫測試計畫，確保軟體功能的正確性與穩定性。在這段工作經歷中，我累積了對產品細節的高度敏感度，並培養了分析與解決問題的能力。
                 </p>
@@ -69,7 +69,7 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="w-1/2 pt-20">
+            <div className="w-1/2 pt-20 xs:pt-12">
               <div className="flex justify-center items-center">
                 <div className="-mr-3 z-10">
                   <button
@@ -86,7 +86,7 @@ export default function About() {
                 </div>
                 <Image
                   src={profiles[imageNum]}
-                  alt="first profile picture on about page"
+                  alt="profile picture on about page"
                   width={450}
                   height={380}
                   layout="intrinsic"
@@ -115,6 +115,22 @@ export default function About() {
               width={50}
             />
           </div>
+          <div className="mt-12 px-14 flex flex-col text-zinc-700 sm:hidden">
+                <p className="mb-5">
+                  目前擔任軟體測試助理工程師，主要負責手動測試以及撰寫測試計畫，確保軟體功能的正確性與穩定性。在這段工作經歷中，我累積了對產品細節的高度敏感度，並培養了分析與解決問題的能力。
+                </p>
+                <p className="mb-5">
+                  在工作過程中，我發現自己對前端開發充滿興趣，尤其對於設計直覺化且吸引人的使用者介面感到著迷。因此，我開始自學
+                  HTML、CSS、JavaScript 和
+                  React，並將這些技術運用到實際的專案中。透過參與新專案的前端切版工作，我進一步提升了自己的技能，也對前端開發的流程有了更深的理解。
+                </p>
+                <p className="mb-5">
+                  我的性格細心，做事時非常注重細節，對於確保工作成果的精準與品質有高度要求。同時，我也樂於接受挑戰，願意不斷學習新的知識與技能，以完善自己在專業上的能力。
+                </p>
+                <p>
+                  我希望能將目前累積的前端技能與測試經驗相結合，投入到前端工程師的職位中。不僅是完成工作，我更期待能參與創造出讓使用者感到驚喜的產品，並在這條職涯路上持續成長！
+                </p>
+              </div>
         </div>
 
         <div className="flex flex-col items-center mt-24">
@@ -125,9 +141,9 @@ export default function About() {
               </p>
             </div>
             <div className="flex flex-col items-center gap-9">
-              <div className="w-full bg-zinc-200 px-36 py-16 rounded-xl hover:scale-105 hover:shadow-lg">
+              <div className="w-full bg-zinc-200 sm:px-36 sm:py-16 px-10 py-10 rounded-xl hover:scale-105 hover:shadow-lg">
                 <p className="text-xl font-semibold text-zinc-800">
-                  TVBS 聯利媒體股份有限公司 - 軟體測試工程師助理
+                  TVBS 聯利媒體股份有限公司 - <br />軟體測試工程師助理
                 </p>
                 <p className="text-sm text-zinc-600">2023 - Present</p>
                 <ul className="mt-3 text-sky-900 text-lg">
@@ -138,7 +154,7 @@ export default function About() {
                 </ul>
               </div>
               <div className="w-1 h-[90px] bg-gray-500"></div>
-              <div className="w-full bg-zinc-200 px-36 py-16 rounded-xl hover:scale-105 hover:shadow-lg">
+              <div className="w-full bg-zinc-200 sm:px-36 sm:py-16 px-10 py-10 rounded-xl hover:scale-105 hover:shadow-lg">
                 <p className="text-xl font-semibold text-zinc-800">
                   國立台灣大學 - 地理環境資源學系
                 </p>
@@ -157,7 +173,7 @@ export default function About() {
                 SKILLS
               </p>
             </div>
-            <div className="flex gap-12">
+            <div className="flex gap-12 flex-col sm:flex-row">
               <div className="bg-neutral-500 text-neutral-100 px-10 py-9 w-64 rounded-lg hover:scale-110 hover:shadow-xl duration-300 ease-in-out group fadein-first">
                 <Image src="./fe_icon.svg" alt="front-end icon on about me page" width={60} height={60} className="mx-auto mb-4" />
                 <p className="text-center text-2xl font-semibold mb-4 group-hover:underline underline-offset-4">FRONT-END</p>

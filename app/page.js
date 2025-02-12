@@ -27,7 +27,7 @@ export default function Home() {
           className="object-cover"
         />
       </div>
-      <div id="hp" className="flex flex-col items-center justify-center pt-72">
+      <div id="hp" className="flex flex-col items-center justify-center pt-72 xs:pt-80">
         <div
           id="hp-text"
           className="text-white italic flex flex-col items-center justify-center mb-8"
@@ -52,7 +52,7 @@ export default function Home() {
       <div id="hp-bigbtn" className="flex justify-end mt-28">
         <button
           onClick={handleHomeClick}
-          className="flex justify-center items-center italic rounded-l-xl bg-zinc-400/45 text-zinc-400 hover:bg-zinc-400/70 hover:text-zinc-200 px-32 py-8 text-2xl"
+          className="flex justify-center items-center italic rounded-l-xl bg-zinc-400/45 text-zinc-400 hover:bg-zinc-400/70 hover:text-zinc-200 px-10 py-8 sm:px-32 text-2xl"
         >
           <p className="mr-5">Get to know me </p>
           <Image

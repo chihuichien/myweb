@@ -3,15 +3,15 @@ import Image from "next/image";
 
 export default function SideProject({ children, image, name, link }) {
   return (
-    <div className="flex items-center gap-10 bg-zinc-300 py-10 px-10 w-[1200px] rounded-md border-2 border-zinc-400">
-      <div className="overflow-hidden w-[800px]">
+    <div className="flex items-center gap-10 bg-zinc-300 py-10 px-10 w-4/5 rounded-md border-2 border-zinc-400">
+      <div className="overflow-hidden w-[800px] hidden sm:block">
         <a href={link} target="_blank" rel="noopener noreferrer">
           <Image
             src={image}
             alt={`${name} picture on portfolio page`}
             width={600}
             height={600}
-            className="transform transition-transform hover:scale-110 rounded-md duration-500 ease-in-out"
+            className="object-cover transform transition-transform hover:scale-110 rounded-md duration-500 ease-in-out"
           />
         </a>
       </div>
